@@ -1,0 +1,19 @@
+.home-link {
+  @extend %link;
+  color: $accent-color;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.home-link__label {
+  &--dark {
+    color: $third-text-color;
+  }
+
+  &--light {
+    color: $secondary-text-color;
+  }
+}
