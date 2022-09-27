@@ -13,15 +13,6 @@
   align-items: center;
 }
 
-.menu-toggle {
-  border: none;
-  background-color: transparent;
-  
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-}
-
 .header__nav-links,
 .header__contacts {
   @media screen and (max-width: 767px) {

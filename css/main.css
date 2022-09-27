@@ -11,15 +11,19 @@
   color: #2196f3;
 }
 
-.mobile-nav,
+.qualities-list, .mobile-nav,
 .mobile-contacts,
 .mobile-social {
   list-style: none;
 }
-.mobile-nav img,
+.qualities-list img, .mobile-nav img,
 .mobile-contacts img,
 .mobile-social img {
   display: block;
+}
+
+.qualities-list__title {
+  color: #212121;
 }
 
 .hero__button {
@@ -47,6 +51,20 @@
 }
 .hero__button:is(:hover, :focus) {
   background-color: #188ce8;
+}
+
+.qualitis__title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }
 
 body {
@@ -111,6 +129,21 @@ img {
   display: inline-block;
 }
 
+.menu-toggle {
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .header {
   font-size: 14px;
   font-weight: 500;
@@ -124,16 +157,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.menu-toggle {
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -256,4 +279,45 @@ img {
   min-width: 200px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.qualities {
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .qualities-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.qualities-list__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+}
+@media screen and (max-width: 767px) {
+  .qualities-list__title {
+    text-align: center;
+  }
+}
+
+.qualities-list__text {
+  line-height: 1.71;
+}
+
+.qualities-list__title,
+.qualities-list__text {
+  font-size: 14px;
+}
+
+.qualities-list__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
