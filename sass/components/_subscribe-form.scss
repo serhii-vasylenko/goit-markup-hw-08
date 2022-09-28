@@ -1,11 +1,12 @@
 .subscribe-form {
-  display: flex;
+  // display: flex;
+  // text-align: center;
 }
 
 .subscribe-form__input {
   padding: 15px 16px;
-  margin-right: 12px;
-  min-width: 358px;
+  // margin-right: 12px;
+  min-width: 100%;
 
   color: $secondary-text-color;
   background-color: transparent;
@@ -21,12 +22,23 @@
     border-color: $first-bg-color;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe-form__button {
   @extend %button;
   @extend %button--accent;
-  align-self: flex-end;
+  
+
+  // align-self: flex-end;
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .button__label {
