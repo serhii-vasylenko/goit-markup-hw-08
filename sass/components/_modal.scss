@@ -1,0 +1,68 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity $transition-duration-timing, visibility $transition-duration-timing;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background: $first-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: transform $transition-duration-timing, opacity $transition-duration-timing;
+
+  .backdrop.is-hidden & {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1.5) rotateZ(90deg);
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  @include alignmentFlex();
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.close-btn__icon {
+  width: 18px;
+  height: 18px;
+  transition: fill $transition-duration-timing;
+
+  .close-btn:is(:hover, :focus) & {
+    fill: $accent-color;
+  }
+}
