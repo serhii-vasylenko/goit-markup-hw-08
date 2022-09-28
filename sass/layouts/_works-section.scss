@@ -11,13 +11,11 @@
   column-gap: 8px;
 
   margin-bottom: 40px;
-}
 
-// .filter-list__item {
-//   &:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
 
 .filter-list__button {
   @extend %button;
@@ -45,17 +43,28 @@
 .works-list {
   @extend %list;
 
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .works-list__item {
-  // flex-basis: calc((100% - 60px) / 3);
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
+  }
+
+  &:nth-child(-n + 2) {
+    @media screen and (min-width: 768px) {
+      min-height: 440px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
