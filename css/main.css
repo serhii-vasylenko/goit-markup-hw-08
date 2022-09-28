@@ -691,12 +691,7 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
 }
-@media screen and (min-width: 480px) {
-  .work-card__description {
-    min-height: 110px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .works-list__item:nth-child(-n+2) .work-card__description {
     min-height: 146px;
   }
@@ -1002,6 +997,11 @@ img {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 
 .team-list__social-links {
   margin-right: auto;
@@ -1026,6 +1026,11 @@ img {
 @media screen and (min-width: 768px) {
   .clients-list__item {
     flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -1104,5 +1109,10 @@ img {
 @media screen and (min-width: 768px) {
   .works-list__item {
     flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works-list__item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }/*# sourceMappingURL=main.css.map */

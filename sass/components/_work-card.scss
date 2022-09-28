@@ -26,11 +26,7 @@
   padding-bottom: 20px;
   padding-left: 24px;
 
-  @media screen and (min-width: 480px) {
-    min-height: 110px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     .works-list__item:nth-child(-n + 2) & {
       min-height: 146px;
     }
