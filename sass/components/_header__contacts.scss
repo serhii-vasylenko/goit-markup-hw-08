@@ -26,5 +26,7 @@
 }
 .contacts-list__icon {
     margin-right: 8px;
+    
     fill: currentColor;
+    transition: fill $transition-duration-timing;
 }
