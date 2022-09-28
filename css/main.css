@@ -173,13 +173,18 @@ img {
 .nav-links__link--current::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -3px;
   left: 0;
   display: block;
   width: 100%;
   min-height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .nav-links__link--current::after {
+    bottom: -1px;
+  }
 }
 
 .contacts-list {

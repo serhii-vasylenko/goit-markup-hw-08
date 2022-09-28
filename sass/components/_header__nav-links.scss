@@ -16,7 +16,7 @@
     &::after {
       content: '';
       position: absolute;
-      bottom: -1px;
+      bottom: -3px;
       left: 0;
 
       display: block;
@@ -25,6 +25,10 @@
 
       background-color: $accent-color;
       border-radius: 2px;
+
+      @media screen and (min-width: 1200px) {
+        bottom: -1px;
+      }
     }
   }
 }
