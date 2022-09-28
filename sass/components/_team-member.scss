@@ -1,0 +1,24 @@
+.team-member__description {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+  
+  .team-member__title {
+    @extend %title;
+    margin-bottom: 10px;
+  
+    font-weight: 700;
+  }
+  
+  .team-member__position {
+    margin-bottom: 16px;
+  }
+  
+  .team-member__title,
+  .team-member__position {
+    font-size: 16px;
+  }
+
+  .team-member__image {
+    width: 100%;
+  }
