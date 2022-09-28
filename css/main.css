@@ -938,7 +938,12 @@ img {
 }
 
 .portfolio {
-  display: none;
+  padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    display: none;
+  }
 }
 
 .portfolio-list {
