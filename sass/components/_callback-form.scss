@@ -11,6 +11,10 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form-field {
@@ -31,6 +35,12 @@
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+
+    font-size: 14px;
+  }
 }
 
 .callback-form__form-field {

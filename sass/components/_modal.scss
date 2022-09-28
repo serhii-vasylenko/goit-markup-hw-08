@@ -41,6 +41,11 @@
     opacity: 0.5;
     transform: translate(-50%, -50%) scale(1.5) rotateZ(90deg);
   }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close-btn {

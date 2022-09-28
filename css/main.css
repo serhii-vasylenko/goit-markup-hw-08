@@ -525,6 +525,12 @@ img {
   opacity: 0.5;
   transform: translate(-50%, -50%) scale(1.5) rotateZ(90deg);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 
 .modal__close-btn {
   position: absolute;
@@ -562,6 +568,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .callback-form__title {
+    line-height: 1.15;
+  }
+}
 
 .form-field {
   position: relative;
@@ -579,6 +590,12 @@ img {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .form-agreement {
+    justify-content: center;
+    font-size: 14px;
+  }
 }
 
 .callback-form__form-field {
@@ -909,6 +926,11 @@ img {
   min-width: 200px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    min-width: 216px;
+  }
 }
 
 .qualities {
