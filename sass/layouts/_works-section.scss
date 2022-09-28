@@ -4,15 +4,20 @@
 
 .filter-list {
   @extend %list;
-  @include alignmentFlex();
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+
+  margin-bottom: 40px;
 }
 
-.filter-list__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-}
+// .filter-list__item {
+//   &:not(:last-child) {
+//     margin-right: 8px;
+//   }
+// }
 
 .filter-list__button {
   @extend %button;
@@ -22,6 +27,7 @@
   color: $title-color;
   background-color: $second-bg-color;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
 
@@ -38,11 +44,18 @@
 
 .works-list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
 }
 
 .works-list__item {
-  flex-basis: calc((100% - 60px) / 3);
+  // flex-basis: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
