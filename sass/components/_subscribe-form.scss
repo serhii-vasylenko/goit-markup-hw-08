@@ -1,11 +1,11 @@
 .subscribe-form {
-  // display: flex;
-  // text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe-form__input {
   padding: 15px 16px;
-  // margin-right: 12px;
   min-width: 100%;
 
   color: $secondary-text-color;
@@ -26,12 +26,16 @@
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    min-width: 358px;
+  }
 }
 
 .subscribe-form__button {
   @extend %button;
   @extend %button--accent;
-  
 
   // align-self: flex-end;
 
