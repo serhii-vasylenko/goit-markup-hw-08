@@ -321,7 +321,15 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .footer__address-wrapper {
     margin-bottom: 60px;
   }
@@ -336,6 +344,12 @@ img {
 }
 .addresses__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .social-wrapper {
+    padding-top: 5px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -359,6 +373,14 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-wrapper {
+    width: 100%;
+    padding-right: 159px;
+    padding-left: 159px;
+  }
+}
+
 .subscribe-form__input {
   padding: 15px 16px;
   min-width: 100%;
@@ -375,13 +397,13 @@ img {
   border-color: #ffffff;
   cursor: pointer;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .subscribe-form__input {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .subscribe-form__button {
     margin-right: auto;
     margin-left: auto;

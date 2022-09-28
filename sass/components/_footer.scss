@@ -17,19 +17,25 @@
 }
 
 .footer__container {
-  // display: flex;
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .footer__address-wrapper {
   // margin-right: auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 }
 
 .footer__social-wrapper {
   // margin-right: 93px;
+  
 }
 
 .addresses__list {
@@ -51,9 +57,10 @@
   }
 }
 
-.social-wrapper,
-.subscribe-wrapper {
-  // padding-top: 12px;
+.social-wrapper {
+  @media screen and (max-width: 767px) {
+   padding-top: 5px;;
+  }
 }
 
 .social-wrapper {
@@ -76,4 +83,12 @@
 
 .social-wrapper__icon {
   fill: currentColor;
+}
+
+.subscribe-wrapper {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    padding-right: 159px;
+    padding-left: 159px;
+  }
 }
