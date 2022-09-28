@@ -1,0 +1,30 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-links__link {
+  @extend %link;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &--current {
+    color: $accent-color;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      min-height: 4px;
+
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}

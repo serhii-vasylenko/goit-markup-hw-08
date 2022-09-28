@@ -6,9 +6,6 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .home-link__label {
@@ -19,8 +16,4 @@
   &--light {
     color: $secondary-text-color;
   }
-}
-
-.header__home-link {
-  display: inline-block;
 }

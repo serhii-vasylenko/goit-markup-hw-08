@@ -1,0 +1,17 @@
+.header__home-link {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  
+    @media screen and (min-width: 768px) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 25px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+      }
+  }
