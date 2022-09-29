@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Портфоліо</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" >
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -88,8 +89,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-1.jpg" alt="Технокряк" width="450"
-                    height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-1.jpg, ./images/portfolio-works/work-card-mobile@2x-1.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-1.jpg, ./images/portfolio-works/work-card-tablet@2x-1.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-1.jpg, ./images/portfolio-works/work-card-pc@2x-1.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-1.jpg" alt="Технокряк">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -109,8 +117,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-2.jpg" alt="Постер New Orlean vs Golden Star"
-                    width="450" height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-2.jpg, ./images/portfolio-works/work-card-mobile@2x-2.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-2.jpg, ./images/portfolio-works/work-card-tablet@2x-2.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-2.jpg, ./images/portfolio-works/work-card-pc@2x-2.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-2.jpg" alt="Постер New Orlean vs Golden Star">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -130,8 +145,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-3.jpg" alt="Ресторан Seafood" width="450"
-                    height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-3.jpg, ./images/portfolio-works/work-card-mobile@2x-3.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-3.jpg, ./images/portfolio-works/work-card-tablet@2x-3.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-3.jpg, ./images/portfolio-works/work-card-pc@2x-3.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-3.jpg" alt="Ресторан Seafood">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -151,8 +173,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-4.jpg" alt=">Проєкт Prime" width="450"
-                    height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-4.jpg, ./images/portfolio-works/work-card-mobile@2x-4.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-4.jpg, ./images/portfolio-works/work-card-tablet@2x-4.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-4.jpg, ./images/portfolio-works/work-card-pc@2x-4.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-4.jpg" alt="Проєкт Prime">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -172,8 +201,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-5.jpg" alt="Проєкт Boxes" width="450"
-                    height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-5.jpg, ./images/portfolio-works/work-card-mobile@2x-5.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-5.jpg, ./images/portfolio-works/work-card-tablet@2x-5.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-5.jpg, ./images/portfolio-works/work-card-pc@2x-5.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-5.jpg" alt="Проєкт Boxes">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -193,8 +229,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-6.jpg" alt="Inspiration has no Borders"
-                    width="450" height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-6.jpg, ./images/portfolio-works/work-card-mobile@2x-6.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-6.jpg, ./images/portfolio-works/work-card-tablet@2x-6.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-6.jpg, ./images/portfolio-works/work-card-pc@2x-6.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-6.jpg" alt="Inspiration has no Borders">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -214,8 +257,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-7.jpg" alt="Видання Limited Edition" width="450"
-                    height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-7.jpg, ./images/portfolio-works/work-card-mobile@2x-7.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-7.jpg, ./images/portfolio-works/work-card-tablet@2x-7.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-7.jpg, ./images/portfolio-works/work-card-pc@2x-7.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-7.jpg" alt="Видання Limited Edition">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -235,8 +285,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-8.jpg" alt="Проєкт LAB" width="450"
-                    height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-8.jpg, ./images/portfolio-works/work-card-mobile@2x-8.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-8.jpg, ./images/portfolio-works/work-card-tablet@2x-8.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-8.jpg, ./images/portfolio-works/work-card-pc@2x-8.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-8.jpg" alt="Проєкт LAB">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -256,8 +313,15 @@
             <article class="work-card">
               <a href="" class="work-card__link">
                 <div class="work-card__thumb">
-                  <img class="work-card__image" src="./images/portfolio-9.jpg" alt="Growing Business" width="450"
-                    height="294" >
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio-works/work-card-mobile-9.jpg, ./images/portfolio-works/work-card-mobile@2x-9.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                      srcset="./images/portfolio-works/work-card-tablet-9.jpg, ./images/portfolio-works/work-card-tablet@2x-9.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio-works/work-card-pc-9.jpg, ./images/portfolio-works/work-card-pc@2x-9.jpg 2x">
+                    <img class="work-card__image" src="./images/portfolio-works/work-card-mobile-9.jpg" alt="Growing Business">
+                  </picture>
                   <p class="work-card__content">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи

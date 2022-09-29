@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Студія</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" >
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -129,15 +130,21 @@
         <h2 class="section__title">Чим ми займаємося</h2>
         <ul class="portfolio-list">
           <li class="portfolio-list__item">
-            <img src="./images/img1.jpg" alt="Розробка сайтів" width="370" >
+            <img 
+            srcset="./images/quality-1.jpg, ./images/quality-1@2x.jpg 2x"
+            src="./images/quality-1.jpg" alt="Розробка сайтів" width="370" >
             <p class="portfolio-list__text">Десктопні додатки</p>
           </li>
           <li class="portfolio-list__item">
-            <img src="./images/img2.jpg" alt="Розробка мобільних застосунків" width="370" >
+            <img 
+            srcset="./images/quality-2.jpg, ./images/quality-2@2x.jpg 2x"
+            src="./images/quality-2.jpg" alt="Розробка мобільних застосунків" width="370" >
             <p class="portfolio-list__text">Мобільні додатки</p>
           </li>
           <li class="portfolio-list__item">
-            <img src="./images/img3.jpg" alt="Підбір кольорових рішень" width="370" >
+            <img 
+            srcset="./images/quality-3.jpg, ./images/quality-3@2x.jpg 2x"
+            src="./images/quality-3.jpg" alt="Підбір кольорових рішень" width="370" >
             <p class="portfolio-list__text">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -153,12 +160,12 @@
             <article class="team-member">
               <picture>
                 <source media="(max-width: 767px)"
-                  srcset="./images/team-card1-mob.jpg, ./images/team-card1-mob@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card1-mob.jpg, ./images/team-cards/team-card1-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)"
-                  srcset="./images/team-card1-tab.jpg, ./images/team-card1-tab@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card1-tab.jpg, ./images/team-cards/team-card1-tab@2x.jpg 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="./images/team-card1-pc.jpg, ./images/team-card1-pc@2x.jpg 2x">
-                <img class="team-member__image" src="./images/team-card1-mob.jpg" alt="Ігор Дем'яненко">
+                  srcset="./images/team-cards/team-card1-pc.jpg, ./images/team-cards/team-card1-pc@2x.jpg 2x">
+                <img class="team-member__image" src="./images/team-cards/team-card1-mob.jpg" alt="Ігор Дем'яненко">
               </picture>
               <div class="team-member__description">
                 <h3 class="team-member__title">Ігор Дем'яненко</h3>
@@ -201,12 +208,12 @@
             <article class="team-member">
 			<picture>
                 <source media="(max-width: 767px)"
-                  srcset="./images/team-card2-mob.jpg, ./images/team-card2-mob@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card2-mob.jpg, ./images/team-cards/team-card2-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)"
-                  srcset="./images/team-card2-tab.jpg, ./images/team-card2-tab@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card2-tab.jpg, ./images/team-cards/team-card2-tab@2x.jpg 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="./images/team-card2-pc.jpg, ./images/team-card2-pc@2x.jpg 2x">
-                <img class="team-member__image" src="./images/team-card2.jpg" alt="Ольга Рєпіна" >
+                  srcset="./images/team-cards/team-card2-pc.jpg, ./images/team-cards/team-card2-pc@2x.jpg 2x">
+                <img class="team-member__image" src="./images/team-cards/team-card2.jpg" alt="Ольга Рєпіна" >
               </picture>
              <div class="team-member__description">
                 <h3 class="team-member__title">Ольга Рєпіна</h3>
@@ -249,12 +256,12 @@
             <article class="team-member">
 			<picture>
                 <source media="(max-width: 767px)"
-                  srcset="./images/team-card3-mob.jpg, ./images/team-card3-mob@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card3-mob.jpg, ./images/team-cards/team-card3-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)"
-                  srcset="./images/team-card3-tab.jpg, ./images/team-card3-tab@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card3-tab.jpg, ./images/team-cards/team-card3-tab@2x.jpg 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="./images/team-card3-pc.jpg, ./images/team-card3-pc@2x.jpg 2x">
-                <img class="team-member__image" src="./images/team-card3.jpg" alt="Микола Тарасов" width="450" >
+                  srcset="./images/team-cards/team-card3-pc.jpg, ./images/team-cards/team-card3-pc@2x.jpg 2x">
+                <img class="team-member__image" src="./images/team-cards/team-card3.jpg" alt="Микола Тарасов" width="450" >
               </picture>
               <div class="team-member__description">
                 <h3 class="team-member__title">Микола Тарасов</h3>
@@ -297,12 +304,12 @@
             <article class="team-member">
 			<picture>
                 <source media="(max-width: 767px)"
-                  srcset="./images/team-card4-mob.jpg, ./images/team-card4-mob@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card4-mob.jpg, ./images/team-cards/team-card4-mob@2x.jpg 2x">
                 <source media="(max-width: 1199px)"
-                  srcset="./images/team-card4-tab.jpg, ./images/team-card4-tab@2x.jpg 2x">
+                  srcset="./images/team-cards/team-card4-tab.jpg, ./images/team-cards/team-card4-tab@2x.jpg 2x">
                 <source media="(min-width: 1200px)"
-                  srcset="./images/team-card4-pc.jpg, ./images/team-card4-pc@2x.jpg 2x">
-                <img class="team-member__image" src="./images/team-card4.jpg" alt="Михайло Єрмаков" >
+                  srcset="./images/team-cards/team-card4-pc.jpg, ./images/team-cards/team-card4-pc@2x.jpg 2x">
+                <img class="team-member__image" src="./images/team-cards/team-card4.jpg" alt="Михайло Єрмаков" >
               </picture>
               <div class="team-member__description">
                 <h3 class="team-member__title">Михайло Єрмаков</h3>
