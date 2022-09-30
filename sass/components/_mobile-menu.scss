@@ -26,13 +26,15 @@
   transform: translateX(0);
 }
 
-.menu-toggle {
+.menu-button {
   position: absolute;
   right: 15px;
   top: 10px;
+
+  padding: 0;
 }
 
-.menu-toogle__icon {
+.menu-button__icon {
     width: 40px;
     height: 40px;
 

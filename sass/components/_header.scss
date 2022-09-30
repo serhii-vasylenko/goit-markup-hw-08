@@ -21,3 +21,13 @@
     display: none;
   }
 }
+
+.header__container {
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+
+.header__menu-button {
+  padding: 0;
+}
