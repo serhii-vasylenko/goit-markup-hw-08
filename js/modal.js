@@ -4,15 +4,19 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
   };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
+  
+  const toggleMenu = () => {
+    const isMenuOpen =
+      refs.openModalBtn.getAttribute('aria-expanded') === 'true' || false;
+      refs.openModalBtn.setAttribute('aria-expanded', !isMenuOpen);
     refs.modal.classList.toggle('is-hidden');
 
-    const isHidden = document.querySelector('.backdrop.is-hidden');
-    const scrollLockMethod = !isHidden ? 'disableBodyScroll' : 'enableBodyScroll';
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
-  }
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleMenu);
+  refs.closeModalBtn.addEventListener('click', toggleMenu);
 })();

@@ -75,7 +75,10 @@
       <!-- hero -->
       <section class="hero section">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
+        <button class="hero__button" type="button" data-modal-open
+        aria-expanded="false"
+          aria-controls="modal-window"
+        >Замовити послугу</button>
       </section>
 
       <!-- qualities -->
@@ -499,7 +502,7 @@
       <!-- modal -->
       <div class="backdrop is-hidden" data-modal>
         <!-- <div class="backdrop" data-modal> -->
-        <div class="modal">
+        <div class="modal" id="modal-window">
           <button type="button" class="modal__close-btn close-btn" data-modal-close tabindex="8">
             <svg class="close-btn__icon" width="30" height="30">
               <use href="./images/icons.svg#icon-close"></use>
