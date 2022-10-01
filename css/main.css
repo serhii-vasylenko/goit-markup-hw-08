@@ -889,7 +889,7 @@ ul {
 @media screen and (max-width: 359px) {
   .mobile-social {
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 15px;
     margin-left: -40px;
   }
 }
