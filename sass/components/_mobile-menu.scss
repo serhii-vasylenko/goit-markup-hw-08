@@ -101,12 +101,17 @@
   @media screen and (max-width: 359px) {
     flex-wrap: wrap;
     row-gap: 10px;
+    margin-left: -40px;
   }
 }
 
 .mobile-social__item {
   @media screen and (max-width: 359px) {
     flex-basis: calc(100% / 2);
+
+    &:nth-child(odd) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
   }
 
   @media screen and (min-width: 360px) {
@@ -117,6 +122,11 @@
 }
 
 .mobile-social__link {
+  @media screen and (max-width: 359px) {
+    display: block;
+    text-align: center;
+  }
+
   @media screen and (min-width: 360px) {
     .mobile-social__item:not(:first-child) & {
       padding-left: 10px;
