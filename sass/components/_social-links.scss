@@ -19,12 +19,9 @@
 
   transition: background-color $transition-duration-timing;
 
-  &:hover {
+  &:is(:hover, :focus) {
     background-color: $accent-color;
     color: $first-bg-color;
-  }
-  &:focus {
-    background-color: $accent-color;
   }
 }
 

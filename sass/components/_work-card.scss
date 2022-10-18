@@ -68,7 +68,7 @@
   color: $secondary-text-color;
   background: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform $transition-duration-timing;
 
   .work-card__link:is(:hover, :focus) & {

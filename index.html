@@ -192,11 +192,12 @@
                     "
                   />
                   <source
-                    media="(max-width: 1199px)"
+                    
                     srcset="
                       ./images/team-cards/team-card1-tab.jpg,
                       ./images/team-cards/team-card1-tab@2x.jpg 2x
                     "
+                    media="(max-width: 1199px)"
                   />
                   <source
                     media="(min-width: 1200px)"
@@ -580,53 +581,55 @@
 
       <!-- mobile menu -->
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu close-button">
-          <svg class="close-button__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu-close"></use>
-          </svg>
-        </button>
-
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item">
-            <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
-          </li>
-
-          <li class="mobile-nav__item">
-            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
-          </li>
-
-          <li class="mobile-nav__item">
-            <a href="" class="mobile-nav__link">Контакти</a>
-          </li>
-        </ul>
-
-        <ul class="mobile-contacts">
-          <li class="mobile-contacts__item">
-            <a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>
-          </li>
-
-          <li class="mobile-contacts__item">
-            <a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
-          </li>
-        </ul>
-
-        <ul class="mobile-social">
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">Instagram</a>
-          </li>
-
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">Twitter</a>
-          </li>
-
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">Facebook</a>
-          </li>
-
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">LinkedIn</a>
-          </li>
-        </ul>
+        <div class="container menu-container__container">
+          <button class="menu-toggle js-close-menu close-button">
+            <svg class="close-button__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+  
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+            </li>
+  
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+            </li>
+  
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__link">Контакти</a>
+            </li>
+          </ul>
+  
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a>
+            </li>
+  
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
+            </li>
+          </ul>
+  
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Instagram</a>
+            </li>
+  
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Twitter</a>
+            </li>
+  
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Facebook</a>
+            </li>
+  
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
 
